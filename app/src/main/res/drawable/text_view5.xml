@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle" >
+            <!-- 设置背景色为红色 -->
+            <solid  android:color="#6ab82e"/>
+
+            <stroke
+                android:width="1dp"
+                android:color="#505050"/>
+        </shape>
+    </item>
+</selector>
