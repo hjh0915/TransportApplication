@@ -36,6 +36,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Button qr_code = (Button)findViewById(R.id.btn_qr_code);
         qr_code.setOnClickListener(this);
+
+        Button map = (Button)findViewById(R.id.btn_map);
+        map.setOnClickListener(this);
     }
 
     @Override
@@ -46,6 +49,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent1);
                 break;
 
+            case R.id.btn_map:
+                Intent intent2 = new Intent(this, MapActivity.class);
+                startActivity(intent2);
+                break;
 
             case R.id.btn_histogram:
                 Intent intent3 = new Intent(this, HistogramActivity.class);

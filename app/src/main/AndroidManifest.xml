@@ -2,9 +2,23 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.work.transportapplication">
 
+    <!--网络权限-->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--允许程序打开网络套接字-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--允许程序设置内置sd卡的写权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允许程序获取网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--允许程序访问WiFi网络信息-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--允许程序读写手机状态和身份-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--允许程序访问CellID或WiFi热点来获取粗略的位置-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar" -->
     <application
@@ -15,6 +29,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="d420cd10bb8dbbd0dba7520a52cd8ccd"/>
+
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
@@ -31,8 +50,6 @@
             android:screenOrientation="landscape"> <!-- 设置屏幕横向 -->
         </activity>
 
-        <service android:name=".location.LocationSvc" />
-
         <activity
             android:name=".HistogramActivity"
             android:screenOrientation="landscape" />
@@ -44,7 +61,8 @@
             android:name=".LineActivity"
             android:screenOrientation="landscape" />
         <activity android:name=".WebViewActivity" />
-        <activity android:name=".QRCodeActivity"></activity>
+        <activity android:name=".QRCodeActivity" />
+        <activity android:name=".MapActivity"></activity>
     </application>
 
 </manifest>
