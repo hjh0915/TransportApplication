@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".HistogramActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="数据分析"
+            android:textColor="#fff"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:background="#33ccff" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="排行前十位的交通违法行为的占比统计"
+            android:gravity="center" />
+
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chartBar_01"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="220dp">
+        </com.github.mikephil.charting.charts.BarChart>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/mybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="点击显示二维码"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/myeditText"
+        android:layout_width="300dp"
+        android:maxLines="1"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mybutton"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="请输入要加载成二维码的内容" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="192dp"
+        android:src="@drawable/ic_launcher_background" />
+
+</LinearLayout>

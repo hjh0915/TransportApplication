@@ -17,8 +17,44 @@
         android:layout_height="wrap_content" />
 
     <Button
+        android:text="volley框架"
+        android:id="@+id/btn_volley"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
         android:text="生活助手模块"
         android:id="@+id/btn_life_asist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="柱状图"
+        android:id="@+id/btn_histogram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="饼状图"
+        android:id="@+id/btn_pie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="折线图"
+        android:id="@+id/btn_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="实现html"
+        android:id="@+id/btn_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="二维码"
+        android:id="@+id/btn_qr_code"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </LinearLayout>
