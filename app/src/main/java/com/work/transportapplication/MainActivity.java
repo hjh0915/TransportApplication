@@ -39,6 +39,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Button map = (Button)findViewById(R.id.btn_map);
         map.setOnClickListener(this);
+
+        Button drawer = (Button)findViewById(R.id.btn_drawer);
+        drawer.setOnClickListener(this);
     }
 
     @Override
@@ -80,6 +83,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_qr_code:
                 Intent intent8 = new Intent(this, QRCodeActivity.class);
                 startActivity(intent8);
+                break;
+
+            case R.id.btn_drawer:
+                Intent intent9 = new Intent(this, DrawerActivity.class);
+                startActivity(intent9);
                 break;
             default:
                 break;
