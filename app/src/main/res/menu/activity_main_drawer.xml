@@ -7,14 +7,18 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:title="柱状图" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:title="饼状图" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:title="地图" />
+        <item
+            android:id="@+id/nav_line"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="折线图" />
     </group>
 </menu>
